@@ -1,0 +1,31 @@
+
+h1 {								/* tooltips */
+	font-size: 14pt;
+	font-weight:bold;
+	font-family: sans-serif;
+}
+
+body {								/* tooltips */
+	font-size: 12pt;
+	font-family: sans-serif;
+	margin: 0;
+}
+
+.name {								/* tooltips */
+	font-size: 10pt;
+	font-family: sans-serif;
+}
+
+.controls {
+	text-align:center;
+	width:780px;
+}
+
+.leftGap {
+	margin-left: 1em;
+}
+
+#complete {
+	margin-bottom: 1em;
+}
+

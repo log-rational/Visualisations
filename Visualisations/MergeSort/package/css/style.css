@@ -1,0 +1,22 @@
+.code {
+    font-family:'courier new';
+    font-size:100%;
+}
+.outerCode {
+    font-size:100%;
+    margin:0;
+    padding:1px 0 1em 1em;
+    background-color:#ffb3b3;
+    border-radius:0.5em;
+}
+.innerCode {
+    font-size:100%;
+    background-color:#b3c4ff;
+    padding:0;
+    margin:0 0 0 0;
+}
+p {
+    padding:0;
+    margin:2px 0 2px 0;    
+}
+

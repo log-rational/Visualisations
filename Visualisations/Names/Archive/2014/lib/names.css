@@ -1,0 +1,23 @@
+
+h1 {								/* tooltips */
+	font-size: 12pt;
+	font-weight:bold;
+	font-family: sans-serif;
+}
+
+body {								/* tooltips */
+	font-size: 10pt;
+	font-family: sans-serif;
+}
+
+.name {								/* tooltips */
+	font-size: 8pt;
+	font-family: sans-serif;
+}
+
+.controls {
+	text-align:center;
+	width:780px;
+}
+	
+

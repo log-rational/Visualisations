@@ -1,0 +1,26 @@
+.code {
+    font-family:'courier new';
+    font-size:100%;
+}
+.graph {
+    font-family:'courier new';
+    font-size:100%;
+}
+.outerCode {
+    font-size:100%;
+    margin:0;
+    padding:1px 0 1em 0;
+    background-color:#df797c;
+}
+.innerCode {
+    font-size:100%;
+    background-color:#86c3d3;
+    padding:1px 0 1px 0;
+    margin:0 0 0 2.8em;
+}
+.innerCodeGraph {
+    font-size:100%;
+    background-color:#86c3d3;
+    padding:0 0 1px 0;
+    margin:0 0 0 2em;
+}

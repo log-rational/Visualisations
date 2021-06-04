@@ -1,0 +1,263 @@
+body {
+    margin: auto 0;
+    width: auto
+}
+
+#pageM {
+    width: 100%;
+    position: relative
+}
+
+th,
+td,
+a img {
+    border-width: 0
+}
+
+.clearer {
+    background: transparent;
+    border-width: 0;
+    clear: both;
+    display: block;
+    height: 1px;
+    margin: 0;
+    padding: 0
+}
+
+#maincontent {
+    display: block;
+    height: 1px;
+    overflow: hidden
+}
+
+.accesshide {
+    position: absolute;
+    left: -10000px;
+    font-weight: normal;
+    font-size: 1em
+}
+
+.content {
+    clear: both;
+    overflow: hidden
+}
+
+html {
+    overflow-x: auto
+}
+
+body {
+    font: 0.875em/1.4 Arial, sans-serif;
+    color: #1A1A1A;
+    background: #EBF4FB url(body_bg.png) repeat-x;
+    padding: 0 12px;
+    word-wrap: break-word;
+    -ms-word-wrap: break-word
+}
+
+h2.main {
+    font-weight: normal;
+    font-size: 1.28em;
+    margin-bottom: 2px
+}
+
+h3.main {
+    font-weight: normal;
+    margin-bottom: 2px
+}
+
+.clearer {
+    height: 0
+}
+
+#header {
+    position: relative;
+    padding-bottom: 2px;
+    height: auto
+}
+
+
+a {
+    color: black;
+    text-decoration: none
+}
+
+a:hover {
+    color: #1F536B;
+    text-decoration: underline
+}
+
+li {
+    margin: 5px
+}
+
+h1 {
+    color: #1F536B
+}
+
+#main {
+    background: #FFF none;
+    -moz-border-radius: 14px;
+    -webkit-border-radius: 14px;
+    border-radius: 14px;
+    -khtml-border-radius: 14px;
+    padding-left: 0;
+    height: 100%
+}
+
+
+body #region-main #region-main-inner {
+    min-height: 350px
+}
+
+
+th, td {
+    border: 1px solid #ccc
+}
+
+body {
+    min-width: 900px
+}
+
+#pageM {
+    width: auto
+}
+
+#main {
+    height: auto;
+    min-height: 1px
+}
+
+.block {
+    border: none;
+    margin-bottom: 4px
+}
+
+.block .header h2 {
+    margin: 2px;
+    font-size: 1.25em;
+    font-weight: normal
+}
+
+.block .header .commands a {
+    margin: 0 2px
+}
+
+#contentM #region-post .block {
+    padding: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #f2f2f2;
+    margin-right: 5px
+}
+
+.copyrightM {
+    font-size: 80%;
+    position: absolute;
+    bottom: 1em;
+}
+
+.tree-current {
+    color: #1F536B;
+    font-weight: bold
+}
+
+#header {
+    float: left;
+    width: 100%
+}
+
+#main .decoration2 {
+    position: absolute;
+    width: 200px;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: url(rule-left.png)
+}
+
+#main .decoration3 {
+    position: absolute;
+    width: 200px;
+    height: 2px;
+    bottom: 0;
+    right: 0;
+    background: url(rule-right.png)
+}
+
+#main .decoration4 {
+    position: absolute;
+    height: 2px;
+    bottom: 0;
+    left: 200px;
+    right: 200px;
+    background: #ccc
+}
+
+#contentM #region-post .block {
+    background: #F2F2F2 url(drop-right.png) repeat-y scroll left;
+    position: relative;
+    z-index: 3
+}
+
+#contentM #leftM {
+    overflow: visible
+}
+
+#contentM .region-contentM {
+    padding-left: 0
+}
+
+#contentM #region-main {
+    margin-left: 246px;
+    margin-right: 246px;
+    padding-left: 10px;
+    position: relative;
+    overflow: visible
+}
+
+#pageM #contentM {
+    float: none;
+    overflow: visible;
+    position: static;
+    min-width: 0;
+    width: auto
+}
+
+#header, #page-footer {
+    float: none;
+    width: auto
+}
+
+#contentM #leftM {
+    left: auto;
+    margin-left: 0;
+    overflow: visible;
+    float: left;
+    width: 205px;
+    padding-left: 41px
+}
+
+body #region-main #region-main-inner {
+    float: left;
+    width: 100%
+}
+
+#region-main .decoration1 {
+    position: absolute;
+    left: -21px;
+    top: 0;
+    bottom: 0;
+    width: 21px;
+    background-image: url(drop-left.png)
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}

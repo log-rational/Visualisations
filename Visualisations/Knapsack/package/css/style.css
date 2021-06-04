@@ -1,0 +1,12 @@
+h2 {
+    margin-top: 0;
+    font-size: 1.25em;
+}
+
+.headingCount {
+    font-family: thonburi, "Myriad Pro", Calibri, Tahoma, "Lucida Grande", Arial, Helvetica, sans-serif;
+    font-size: 1.25em;
+    font-weight: normal;
+    margin: 0 0 0.4em 0;
+    color: #143748;
+}

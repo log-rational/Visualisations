@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Binary search of top 90 names for baby girls', 2012, England and Wales</title>
+        <link type="text/css" rel="stylesheet" href="lib/names.css"/>
+        <script type="text/javascript" src="lib/d3.v2.js"></script>
+        <script type="text/javascript" src="lib/namesearch.js"></script>
+    </head>
+    <body>
+        <h1 id="title">Binary search of top 90 names for baby girls, 2012, England and Wales</h1>
+        <div><svg id="names" width="780" height="200"></svg></div>
+        <br/>
+        <form>
+            <div class="controls">
+            Name: <input type="text" name="name" id="searchName"/>
+            <input type="button" value="Go" id="go" onclick="search()" />
+            <input type="button" value="Reset" onclick="restart()" />
+
+            Iterations: <input type="text" name="name" id="iterations" size=1 />
+            <span id="results">
+                Rank: <input type="text" name="name" id="rank" size=2 />
+                Total babies: <input type="text" name="name" id="total" size=4 />
+            </span>
+            </div>
+        </form>
+        <script type="text/javascript">
+            var names;
+            restart();
+
+            function search()
+            {
+                document.getElementById("go").disabled = true;
+                names.search(document.getElementById("searchName").value.toUpperCase());
+            }
+
+            function searchNext(iterations)
+            {
+                document.getElementById("iterations").value = iterations;
+                names.searchNext();
+            }
+
+            function restart() {
+                document.getElementById("results").style.display = "none";
+                document.getElementById("go").disabled = false;
+                document.getElementById("rank").value = "";
+                document.getElementById("total").value = "";
+                document.getElementById("iterations").value = "0";
+                names = new Names();
+            }
+
+            function found(rank, total, iterations) {
+                document.getElementById("results").style.display = "inline";
+                document.getElementById("rank").value = rank;
+                document.getElementById("total").value = total;
+                document.getElementById("iterations").value = iterations;
+            }
+        </script>
+        <br/>
+    </body>
+</html>

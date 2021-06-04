@@ -1,0 +1,70 @@
+/* ensure tight header packing */
+
+h2 {
+	margin-top: 8px;
+}
+
+h3 {
+	margin-top: 0;
+}
+
+/* modifications specific to recursion */
+table {
+	table-layout: fixed;
+	border-collapse: collapse;
+	border: 1px solid rgba(255, 255, 255, 0.0);
+}
+
+table td {
+	border: 1px solid rgba(255, 255, 255, 0.0);
+	width: 60px;
+}
+
+.blank {
+	background-color: white;
+	border-color: white;
+}
+
+/* syntax highlighting overrides */
+pre, code, .function, .number, .keyword, .title, .params, .custom-highlight, .line {
+	font-family: courier; /* monospace */
+}
+
+.boxed {
+	border:solid 1px black;
+	font-family: courier;
+	font-size: smaller;
+}
+
+/* background colors */
+.color0 {
+	background-color: rgba(255,135,0,0.3);
+}
+
+.color1 {
+	background-color: rgba(239,255,0,0.3);
+}
+
+.color2 {
+	background-color: rgba(104,255,0,0.3);
+}
+
+.color3 {
+	background-color: rgba(0,255,32,0.3);
+}
+
+.color4 {
+	background-color: rgba(0,255,167,0.3);
+}
+
+.color5 {
+	background-color: rgba(0,207,255,0.3);
+}
+
+.color6 {
+	background-color: rgba(0,72,255,0.3);
+}
+
+.color7 {
+	background-color: rgba(64,0,255,0.3);
+}

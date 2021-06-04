@@ -1,0 +1,825 @@
+/*
+  * Design by Glen Darby
+  * Original CSS by Laurian Gridinoc
+  * Adapted for W3C compatibility by gnschmidt at users.sourceforge.net
+  * Updated for OU Ice by David Winter
+  * DAISY styles by Peter Cox
+*/
+
+/* heading size override: */
+
+/* based on W3C template at http://www.w3.org/TR/CSS2/sample.html */
+
+body {
+    overflow: hidden;
+}
+
+html, address,
+blockquote,
+body, dd, div,
+dl, dt, fieldset, form,
+frame, frameset,
+h1, h2, h3, h4,
+h5, h6, noframes,
+ol, p, ul, center,
+dir, hr, menu, pre {
+    display: block
+}
+
+li {
+    display: list-item
+}
+
+head {
+    display: none
+}
+
+table {
+    display: table;
+}
+
+tr {
+    display: table-row
+}
+
+thead {
+    display: table-header-group
+}
+
+tbody {
+    display: table-row-group
+}
+
+tfoot {
+    display: table-footer-group
+}
+
+col {
+    display: table-column
+}
+
+colgroup {
+    display: table-column-group
+}
+
+td, th {
+    display: table-cell
+}
+
+caption {
+    display: table-caption
+}
+
+th {
+    font-weight: bolder;
+    text-align: center
+}
+
+caption {
+    text-align: center
+}
+
+body {
+    margin: 8px
+}
+
+h1 {
+    font-size: 2em;
+    margin: .67em 0
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: .75em 0
+}
+
+h3 {
+    font-size: 1.17em;
+    margin: .83em 0
+}
+
+h4, p,
+blockquote, ul,
+fieldset, form,
+ol, dl, dir,
+menu {
+    /* margin: 1.12em 0 */
+    margin: .83em 0; /* exp gns */
+}
+
+h5 {
+    font-size: .83em;
+    margin: 1.5em 0
+}
+
+h6 {
+    font-size: .75em;
+    margin: 1.67em 0
+}
+
+h1, h2, h3, h4,
+h5, h6, b,
+strong {
+    font-weight: bolder
+}
+
+blockquote {
+    margin-left: 40px;
+    margin-right: 40px
+}
+
+i, cite, em,
+var, address {
+    font-style: italic
+}
+
+pre, tt, code,
+kbd, samp {
+    font-family: monospace
+}
+
+pre {
+    white-space: pre
+}
+
+button, textarea,
+input, select {
+    display: inline-block
+}
+
+big {
+    font-size: 1.17em
+}
+
+small, sub, sup {
+    font-size: .83em
+}
+
+sub {
+    vertical-align: sub
+}
+
+sup {
+    vertical-align: super
+}
+
+table {
+    border-spacing: 2px;
+}
+
+thead, tbody,
+tfoot {
+    vertical-align: middle
+}
+
+td, th, tr {
+    vertical-align: inherit
+}
+
+td.blank-column, th.blank-column, th.thSelectColumn {
+    background: white;
+    color: black;
+}
+
+s, strike, del {
+    text-decoration: line-through
+}
+
+ol, ul, dir,
+menu, dd {
+    margin-left: 20px;
+}
+
+ol {
+    list-style-type: decimal
+}
+
+ol ul, ul ol,
+ul ul, ol ol {
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+u, ins {
+    text-decoration: underline
+}
+
+br:before {
+    content: "\A";
+    white-space: pre-line
+}
+
+center {
+    text-align: center
+}
+
+:link, :visited {
+    text-decoration: underline
+}
+
+:focus {
+    outline: thin dotted invert
+}
+
+@media print {
+    h1 {
+        page-break-before: always
+    }
+
+    h1, h2, h3,
+    h4, h5, h6 {
+        page-break-after: avoid
+    }
+
+    ul, ol, dl {
+        page-break-before: avoid
+    }
+}
+
+/* end W3C recommendation */
+body {
+    font-family: thonburi, "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+/* dw */
+h1 {
+    border-bottom: 1px solid #E5E5E5;
+    color: #143748;
+    font-family: thonburi, "Myriad Pro", Calibri, Tahoma, "Lucida Grande", Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    font-weight: normal;
+}
+
+h2, h3, h4, h5 {
+    font-family: thonburi, "Myriad Pro", Calibri, Tahoma, "Lucida Grande", Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-weight: normal;
+    margin: 1em 0 0.5em 0;
+    color: #143748;
+}
+
+h3 {
+    font-size: 1.17em;
+}
+
+h4 {
+    font-size: 1.12em;
+}
+
+h5 {
+    font-size: 0.83em;
+}
+
+a {
+    /* dw */
+    color: #143748;
+}
+
+.btnDn a {
+    /* background-image:url('bbgh.png');*/
+    border-color: #88f;
+}
+
+/* create space around boxes */
+.box, .box-alt, .link-button, .back-button, .link-button-reset, .play {
+    /* exp adjusted gns */
+    margin-bottom: 0.2em;
+    margin-top: 0.2em;
+    margin-right: 0.2em;
+}
+
+.box h1, .box h2, .box h3, .box h4, .box h5 {
+    margin: 0.83em 0.2em;
+}
+
+.box-alt h1, .box-alt h2, .box-alt h3, .box-alt h4, .box-alt h5 {
+    margin: 0.83em 0.2em;
+    color: white;
+}
+
+.header-h1 h4, .header-h2 h4, .header-h3 h4 {
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: left;
+    margin: .67em 0;
+}
+
+.header-h2 h4 {
+    font-size: 1.5em;
+}
+
+.header-h3 h4 {
+    font-size: 1.17em;
+}
+
+.ou-footer img, .header img {
+    float: right;
+}
+
+.internal-section-title h4, .activity-title h1, .activity-title h2, .activity-title h3, .activity-title h4, .activity-title h5 {
+    color: white;
+    background: #6e6e6e; /* ou ice */
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 2em;
+    -webkit-border-radius: 3px;
+    -webkit-box-shadow: rgba(177, 177, 177, 0.7) 0px 1px 1px;
+    -moz-border-radius: 3px;
+    -moz-box-shadow: rgba(177, 177, 177, 0.7) 0px 1px 1px;
+
+    /* ou ice */
+    border: 1px solid #5c5c5c;
+
+    /* next tone of grey along; lightest guessed as break in OU Ice palette */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #6e6e6e), color-stop(40%, #5c5c5c), color-stop(100%, #454545));
+    background: -moz-linear-gradient(top, #6e6e6e, #454545);
+}
+
+.internal-section-title h4 {
+    padding-left: .4em;
+}
+
+.activity-title h1, .activity-title h2, .activity-title h3, .activity-title h4, .activity-title h5 {
+    color: white;
+
+    /* dw */
+    border: 1px solid #1f536b; /* gns: 2nd darkest in palette - was #04376e; as in old design */
+    background: -moz-linear-gradient(100% 100% 90deg, #073447, #296E8F);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#296E8F), to(#073447));
+
+    padding-left: .4em;
+}
+
+.play a:visited, .link-button a:visited, .back-button a:visited, .link-button-reset a:visited {
+    color: black;
+}
+
+/* gns */
+.box, .box-alt, .play, .link-button, .back-button, .link-button-reset {
+    /* ou ice transition: f5f9fb, ebf4f8, d6e8f0 */
+
+    border: 1px solid #d6e8f0;
+    margin-right: 0.2em;
+    color: black;
+
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f5f9fb), color-stop(40%, #ebf4f8), color-stop(100%, #d6e8f0));
+    background: -moz-linear-gradient(top, #f5f9fb, #d6e8f0);
+
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    padding-left: .4em;
+}
+
+.box-alt {
+    border: 1px solid #e3e3e3;
+    background-color: #f8f8f8;
+    color: black;
+
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f8f8f8), color-stop(40%, #f1f1f1), color-stop(100%, #e3e3e3));
+    background: -moz-linear-gradient(top, #f8f8f8, #e3e3e3);
+
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+.box h1, .box h2, .box h3, .box h4, .box h5 {
+    color: #296e8f;
+}
+
+.box-alt h1, .box-alt h2, .box-alt h3, .box-alt h4, .box-alt h5 {
+    color: #5c5c5c;
+}
+
+.toggle-button {
+    padding-top: .2em;
+    padding-bottom: .2em;
+    cursor: pointer;
+}
+
+.delimit {
+    /* dw */
+    color: #143748;
+}
+
+/* dw */
+.play, .link-button, .back-button, .link-button-reset {
+    background: -moz-linear-gradient(100% 100% 90deg, #EEEEEE, #FFFFFF);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFFFFF), to(#EEEEEE));
+    border: 1px solid #CCC;
+
+    /* gns */
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+
+    vertical-align: middle;
+    text-align: center;
+    width: 220px;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+}
+
+.play a, .link-button a, .back-button a, .link-button-reset a, .link-button-pie-chart a, .link-button-area-chart a, .link-button-line-chart a {
+    text-decoration: none;
+    color: black;
+}
+
+/* dw: symbol */
+.play::after, .link-button::after {
+    content: ' »';
+}
+
+/* dw: symbol */
+.back-button::before {
+    content: '« ';
+}
+
+.highlight, .optional-prodnote, .required-prodnote {
+    /* ou ice lightest yellow: fbe799; 2nd lightest: f7d64d; 3rd lightest f4c400 */
+    /* step too far: new second-lightest: f9de73 */
+
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fbe799), color-stop(100%, #f9de73));
+    background: -moz-linear-gradient(top, #f4c400, #f7d64d);
+
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+
+    padding-top: 0.2em; /* exp gns */
+    padding-bottom: 0.2em; /* exp gns */
+
+    color: black;
+    padding-left: .4em;
+    margin: 0.83em 0; /* exp gns */
+}
+
+.highlight-alt {
+    /* gns */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ededcc), color-stop(100%, #c8c866));
+    background: -moz-linear-gradient(top, #ededcc, #c8c866);
+
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+
+    padding-top: 0.2em; /* exp gns */
+    padding-bottom: 0.2em; /* exp gns */
+
+    color: black;
+    padding-left: .4em;
+
+    margin: 0.83em 0; /* exp gns */
+}
+
+/* dw */
+.sidenote {
+    color: black;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+    background-color: #F1F1F1;
+    border-bottom-width: 1px;
+    border-left-width: 10px;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-bottom-color: #D3D3D3;
+    border-left-color: #E3E3E3;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-top-color: #E3E3E3;
+    border-right-color: #D3D3D3;
+}
+
+.sidenote h1, .sidenote h2, .sidenote h3, .sidenote h4, .sidenote h5 {
+    color: #5c5c5c;
+    margin: 0.83em 0.2em; /* exp gns */
+}
+
+/* ou ice */
+table {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+    border: 1px solid #d6e8f0;
+    border: 1px solid rgba(243, 234, 210, 0.5);
+
+}
+
+tr, th, td {
+    border: 1px solid #d6e8f0;
+    border: 1px solid rgba(243, 234, 210, 0.5);
+}
+
+th, td, caption {
+    padding: 0.5em 1em;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background-color: #ebf4fb;
+    background-color: rgba(243, 234, 210, 0.5);
+}
+
+#electronsdiv {
+    position: absolute;
+    top: 12%;
+    left: 52%;
+    width: 40%;
+    /*    padding:3px;
+  border:1px solid #aaa;*/
+}
+
+.caption {
+    color: #143748; /* ou ice */
+}
+
+.play p, .link-button p, .back-button p, .link-button-reset p, .link-button-pie-chart p, .link-button-area-chart p, .link-button-line-chart p {
+    display: inline;
+}
+
+/* gns */
+h1, h2, h3,
+h4, h5, h6, p.nested-heading {
+    page-break-after: avoid;
+}
+
+p.nested-heading, .clear {
+    color: #143748; /* ou ice */
+    display: block;
+    page-break-after: avoid;
+    font-size: 1.17em;
+    margin: .83em 0;
+}
+
+.inline-code {
+    font-family: courier, fixed, monospace;
+}
+
+.note-reference a {
+    text-decoration: none;
+    vertical-align: super;
+}
+
+/* table handling */
+.target ul {
+    list-style-type: none;
+    display: inline;
+}
+
+li.simpleon, li.simpleoff {
+    margin: 0;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    cursor: pointer;
+}
+
+.clear:before {
+    content: 'Toggle columns';
+}
+
+.target {
+    display: inline;
+}
+
+/* daisy */
+.Reader, span.pagenum {
+    color: red;
+}
+
+p.Reader, span.pagenum {
+    margin-top: 0cm;
+    margin-bottom: 0cm;
+}
+
+/* taken from http://www.josefrichter.com/blog/css-postitioning-with-vertical-spacers/ */
+.h5 {
+    margin-top: 5px;
+}
+
+.h10 {
+    margin-top: 10px;
+}
+
+.h20 {
+    margin-top: 20px;
+}
+
+.h50 {
+    margin-top: 50px;
+}
+
+.h100 {
+    margin-top: 100px;
+}
+
+.h200 {
+    margin-top: 200px;
+}
+
+hr {
+    visibility: hidden;
+    clear: both;
+}
+
+/* extras for HTML5 modules */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#timelineList {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#timelineList p {
+    padding-left: 20px;
+}
+
+canvas {
+    float: left;
+    position: absolute;
+}
+
+#uncloseableHtmlBox {
+    z-index: 200;
+}
+
+form {
+    font-size: 0.8em;
+}
+
+.microscopeRotation {
+    float: left;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    overflow: hidden;
+}
+
+.microscopeRotation img {
+    float: left;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+.tabSlide {
+    border: 1px solid #222;
+    background: #fff;
+    float: left;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+}
+
+.tabSlide div.content {
+    padding: 30px 70px 30px 30px;
+    overflow: auto;
+    height: 80%;
+}
+
+.tabSlide div.left {
+}
+
+.tabSlide div.right {
+    float: right;
+    padding: 20px 0 0 20px;
+    border-left: 1px solid #ccc;
+    margin-left: 20px;
+}
+
+.tabSlideTab {
+    float: right;
+    padding: 10px 30px 0 0;
+    font-size: 22px;
+    text-align: right;
+    height: 30px;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+}
+
+.tsClosed {
+
+}
+
+._overlaydiv {
+    float: left;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+}
+
+._overlaydiv p {
+
+}
+
+._overlaydiv p padded {
+    padding: 20px;
+}
+
+._20pxPadding {
+
+    padding: 20px;
+
+}
+
+._leftIndent {
+
+    margin-left: 30px;
+}
+
+._menudiv {
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+}
+
+._menudiv p {
+    padding: 0 10px;
+}
+
+._menudiv input {
+    height: 30px;
+    margin: 5px;
+}
+
+a._abutton {
+    display: block;
+    float: left;
+    border: 1px solid #999;
+    background: #1A1A1A;
+    padding: 3px 10px;
+    margin: 10px 0 0 10px;
+    font-size: 12px;
+    text-decoration: none;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: #AFDFE4;
+}
+
+span._abuttonNOFLOAT {
+    border: 1px solid #999;
+    background: #1A1A1A;
+    padding: 3px 10px;
+    margin: 10px 0 0 10px;
+    font-size: 12px;
+    text-decoration: none;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: #AFDFE4;
+}
+
+a._abutton.highlighted {
+    color: #1A1A1A;
+    font-weight: bold;
+    background: #AFDFE4;
+}
+
+a._abutton img {
+    vertical-align: middle;
+    margin-top: -3px;
+}
+
+video {
+    float: left;
+}
+
+.cepressurechartLL {
+
+    font-size: 50px;
+
+    text-align: center;
+    vertical-align: middle;
+
+    color: #cccccc;
+
+    padding: 8px 0px 0 0;
+
+}
+.popupClose {
+    display: block;
+    float: right;
+    width: 62px;
+    height: 40px;
+    background: 33px 13px url('close.png') no-repeat;
+}
+#__tabsDiv {
+    z-index: 20000;
+    position: absolute;
+    left: -500px;
+    width: 499px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .popupClose {
+        display: block;
+        float: right;
+        width: 124px;
+        height: 80px;
+        background: 30px 8px url('close2.png') no-repeat;
+    }
+}

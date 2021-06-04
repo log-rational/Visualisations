@@ -1,0 +1,81 @@
+i {
+	font-size:100%; font-style:italic
+}
+
+.btn {    
+    outline:0;  
+    width:100%;
+    hieght:100%;
+    vertical-align: middle;
+    z-index:999999999;    
+    padding:4px;
+    margin:0;
+    font-size:100%;
+    color:#000;
+    text-decoration:none;
+    border:solid #6b6b6b 3px;
+    border-radius:7%;        
+    
+    background: -moz-linear-gradient(top,  rgba(84,84,84,0.4) 30%, rgba(81,81,81,0.4) 47%, rgba(73,73,73,0.65) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(30%,rgba(84,84,84,0.4)), color-stop(47%,rgba(81,81,81,0.4)), color-stop(100%,rgba(73,73,73,0.65))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(84,84,84,0.4) 30%,rgba(81,81,81,0.4) 47%,rgba(73,73,73,0.65) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(84,84,84,0.4) 30%,rgba(81,81,81,0.4) 47%,rgba(73,73,73,0.65) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(84,84,84,0.4) 30%,rgba(81,81,81,0.4) 47%,rgba(73,73,73,0.65) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(84,84,84,0.4) 30%,rgba(81,81,81,0.4) 47%,rgba(73,73,73,0.65) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66545454', endColorstr='#a6494949',GradientType=0 ); /* IE6-9 */
+}
+
+.btn:focus {
+    outline:0;  
+    border:solid #cc0000 3px; 
+}
+
+.btn:disabled { 
+    color:#757575;
+    background:#cccccc;
+    border:solid #A5A5A5 3px;
+}
+
+.btn:hover {
+    border:solid #fcb800 3px; 
+}
+
+.btn:active {
+    border:solid #eee 4px; 
+    background:#b6b6b6;
+}
+
+.cbtn {          
+    vertical-align: middle; 
+    margin: 3% 1% 0 0;    
+}
+
+.cbtn_label {     
+    outline:0;  
+    border:solid #fff 3px; 
+    background:#fff;
+    font-size:110%;
+    vertical-align: middle; 
+    padding: 2% 5% 2% 5%;  
+    height:100%;
+    text-align: center;
+    font-size:100%;
+    color:#000;
+    text-decoration:none;              
+}
+
+.cbtn_label:focus {
+    outline:0;      
+    border:solid #cc0000 3px;  
+    
+}
+
+.cbtn_label:hover {    
+    border:solid #fcb800 3px; 
+    
+}
+
+.cbtn_label:active {
+    border:solid #eee 4px; 
+    background:#b6b6b6;
+}
